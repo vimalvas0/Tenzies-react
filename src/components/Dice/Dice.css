@@ -1,0 +1,34 @@
+.dice {
+  width: 40px;
+  height: 40px;
+  border-radius: 3.81px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle elevation */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.frozen {
+  background-color: lightsalmon;
+}
+
+.dice:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+  background-color: darkblue;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
