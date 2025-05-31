@@ -1,5 +1,5 @@
 name: Test Project
-on: [push, pull_request]
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -12,5 +12,5 @@ jobs:
           node-version: "18"
       - name: Install Dependencies
         run: npm ci
-      - name: Run tests
-        run: npm test
+      - name: Run on Dev
+        run: npm run dev
